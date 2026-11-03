@@ -1,0 +1,63 @@
+[
+  {
+    "id": "doodle-craft",
+    "slug": "doodle-craft",
+    "title": "Workshop of Wonders",
+    "description": "Combine materials, discover recipes, and unlock new workshop areas.",
+    "longDescription": "A browser crafting and discovery game. Start with simple materials, follow quests, and grow your workshop through new discoveries. The repository is named doodle-craft.",
+    "category": "Creative",
+    "tags": [
+      "Crafting",
+      "Discovery",
+      "Kids"
+    ],
+    "cover": "/covers/doodle-craft.png",
+    "screenshots": [
+      "/covers/doodle-craft.png"
+    ],
+    "playUrl": "https://kingseagull28.github.io/doodle-craft/",
+    "instructions": "Tap an item in your bag, then tap a square on the crafting table. When a recipe produces an item, press Collect. Follow the quests to discover new materials and areas. Use Help for guidance.",
+    "featured": true,
+    "approved": true
+  },
+  {
+    "id": "pirate-adventure",
+    "slug": "pirate-adventure",
+    "title": "Pirate Adventure",
+    "description": "Chart a course and uncover island treasure.",
+    "longDescription": "Chart a course and uncover island treasure. This bundled sample is a small click-to-score demo, not your original game.",
+    "category": "Adventure",
+    "tags": [
+      "Adventure",
+      "Demo"
+    ],
+    "cover": "/covers/pirate-adventure.svg",
+    "screenshots": [
+      "/covers/pirate-adventure.svg"
+    ],
+    "playUrl": "/demos/pirate-adventure.html",
+    "instructions": "Press the action button to score. Reach ten points to win; restart to try again.",
+    "featured": false,
+    "approved": true
+  },
+  {
+    "id": "horse-racing",
+    "slug": "horse-racing",
+    "title": "Horse Racing",
+    "description": "Pick your champion and race to the finish.",
+    "longDescription": "Pick your champion and race to the finish. This bundled sample is a small click-to-score demo, not your original game.",
+    "category": "Racing",
+    "tags": [
+      "Racing",
+      "Demo"
+    ],
+    "cover": "/covers/horse-racing.svg",
+    "screenshots": [
+      "/covers/horse-racing.svg"
+    ],
+    "playUrl": "/demos/horse-racing.html",
+    "instructions": "Press the action button to score. Reach ten points to win; restart to try again.",
+    "featured": false,
+    "approved": true
+  }
+]

@@ -1,30 +1,32 @@
-# Project Arcade � Version 1
+# Project Arcade
 
-Independent React / TypeScript / Vite / Tailwind application. Requires Node 22.12+ and npm. All records and artwork are illustrative. Bundled demos are deliberately small; they are not your existing GitHub games.
+A public React, TypeScript, Vite and Tailwind catalog. Workshop of Wonders is the featured real game; Pirate Adventure and Horse Racing are bundled sample demos.
 
-## Run
+## Run locally
+
+Requires Node 22.12+ and npm. Run these commands in this repository folder:
 
 ```sh
 npm ci
 npm run dev
-npm test
-npm run build
-npm run preview
 ```
 
-Open the address printed by Vite. Hash detail routes support direct links and browser back/forward. Search matches titles, descriptions and tags; filters combine. No database, GitHub API, automatic AI service or browser-side metadata editor is implied. Edit the JSON file and commit to update metadata.
+Open the local address printed by Vite. Run `npm run build` to execute tests, type checking, the production build and the public artifact scan. Run `npm run preview` to serve that build locally. GitHub Actions validates pushes and pull requests.
 
 ## Catalog maintenance
 
-Edit `src/catalog.json`; duplicate an existing record and use a unique id and slug. Schemas live in `src/model.ts` and reject unknown fields. Build runs validation, tests, type checking and an artifact check. Put approved images under `public/covers`; local asset paths are root-relative. Replace sample covers with real screenshots you own. HTTPS launch URLs are supported; root-relative paths support the bundled demos. Avoid personal data in descriptions, URLs, query strings and images. Never store credentials in either catalog or any VITE_ variable.
+Edit `src/catalog.json`. Add approved artwork under `public/covers/`. Every record requires a unique id and slug and `approved: true`. The strict schema is in `src/model.ts` and rejects unknown/private fields. Search covers titles, descriptions and tags; category filters combine with search. The first featured entry appears in the spotlight.
 
-Every record requires approved:true. This is an explicit reviewed catalog, not an export of Vault metadata. Do not copy the Vault catalog here. Add only a manually reviewed title, descriptions, category, tags, public artwork, instructions, approved play URL, featured flag, id and slug. The schema rejects private fields; the build also scans output for known private sample markers. Scanning is defense in depth, not proof that arbitrary prose/images contain no sensitive data. The UI spotlights the first record marked featured; if none are marked, it uses the first record.
+Review all public text, URLs and images. Never copy private Vault metadata or credentials here. The artifact audit catches known private markers; manual review is still necessary. Metadata changes are file edits reviewed through GitHub, not browser-side edits.
 
-## GitHub and deployment
+## Deployment
 
-Follow `SETUP.md` in the delivery bundle before publishing. Copy ONLY this folder's contents into its own repository (Vault private). Do not push the whole delivery bundle into a public repo. The included GitHub Actions workflow validates pushes and pull requests; deployment is configured separately in Cloudflare. No account integration, domain, deployment or authentication has been configured or verified by this delivery.
+See [SETUP.md](SETUP.md). Cloudflare Pages settings: production branch `main`, repository root directory, build command `npm ci && npm run build`, output `dist`, and environment `NODE_VERSION=22`.
 
-## Recovery
+Saving files to GitHub does not deploy the Arcade. Verify the Cloudflare connection, build result and live URL separately. The linked Workshop of Wonders game keeps its existing GitHub Pages hosting; this catalog does not modify or move it.
 
-Keep an encrypted independent backup of the private repository. Tag known good releases. Restore a local checkout with `git checkout <tag>`; run `npm ci` and `npm run build`, review, then restore through a new branch/PR. Revert a bad catalog commit with `git revert <commit>` and redeploy after review. Keep Access policies intact during rollback. Git backups do not preserve Cloudflare settings: separately retain an encrypted record of hostnames, Access policies and deployment configuration.
+## Publishing and recovery
 
+Test and deploy each real game first. Add only approved public information to the Arcade, run the build, review and merge. Unlisting does not disable the original game website or erase previously public information.
+
+Keep independent Git backups and tag stable releases. Revert a bad change through a reviewed commit and redeploy. Back up Cloudflare settings separately. The Vault belongs in a separate private repository.

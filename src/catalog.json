@@ -41,22 +41,24 @@
     "approved": true
   },
   {
-    "id": "horse-racing",
-    "slug": "horse-racing",
-    "title": "Horse Racing",
-    "description": "Pick your champion and race to the finish.",
-    "longDescription": "Pick your champion and race to the finish. This bundled sample is a small click-to-score demo, not your original game.",
+    "id": "suit-derby",
+    "slug": "suit-derby",
+    "title": "Suit Derby",
+    "description": "Four horses, one deck of cards. Race with friends using play credits.",
+    "longDescription": "A multiplayer card-driven horse race. Each suit has a horse, and each drawn card moves its horse one space. The first horse across the finish wins. Play credits only; no real money.",
     "category": "Racing",
     "tags": [
       "Racing",
-      "Demo"
+      "Cards",
+      "Multiplayer",
+      "Play credits"
     ],
-    "cover": "/covers/horse-racing.svg",
+    "cover": "/covers/suit-derby.png",
     "screenshots": [
-      "/covers/horse-racing.svg"
+      "/covers/suit-derby.png"
     ],
-    "playUrl": "/demos/horse-racing.html",
-    "instructions": "Press the action button to score. Reach ten points to win; restart to try again.",
+    "playUrl": "https://kingseagull28.github.io/suit-derby/",
+    "instructions": "Enter a display name and create a room, then share its room code or invite link with friends. Other players enter their names and join the room. Keep the host’s browser open during play. Everyone starts with 100 play credits; no real money is used.",
     "featured": false,
     "approved": true
   }

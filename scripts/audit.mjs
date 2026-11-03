@@ -1,0 +1,3 @@
+import{readdirSync,readFileSync}from'node:fs';import{join}from'node:path';
+function walk(p){return readdirSync(p,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(join(p,x.name)):[join(p,x.name)])}
+for(const p of walk('dist')){const s=readFileSync(p,'utf8');for(const marker of ['SAMPLE_PRIVATE_CONTEXT','PRIVATE_ONLY_ORBIT_7391','repositoryUrl','originalPrompt','aiContext','knownBugs','Orbit Lab'])if(s.includes(marker))throw Error('Private marker in public artifact: '+p+' '+marker)}console.log('Public artifact privacy scan passed');

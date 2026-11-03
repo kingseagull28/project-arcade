@@ -21,22 +21,24 @@
     "approved": true
   },
   {
-    "id": "pirate-adventure",
-    "slug": "pirate-adventure",
-    "title": "Pirate Adventure",
-    "description": "Chart a course and uncover island treasure.",
-    "longDescription": "Chart a course and uncover island treasure. This bundled sample is a small click-to-score demo, not your original game.",
-    "category": "Adventure",
+    "id": "pirate-dice",
+    "slug": "pirate-dice",
+    "title": "Ship, Captain & Crew",
+    "description": "A pirate dice duel: assemble your ship, captain and crew, then collect treasure.",
+    "longDescription": "Roll five dice up to three times each turn. Claim a ship, captain and crew in order, then score treasure with the two remaining dice. Play against Captain Rook or use the online host and join options with a friend.",
+    "category": "Dice",
     "tags": [
-      "Adventure",
-      "Demo"
+      "Pirate",
+      "Dice",
+      "Solo",
+      "Multiplayer"
     ],
-    "cover": "/covers/pirate-adventure.svg",
+    "cover": "/covers/pirate-dice.png",
     "screenshots": [
-      "/covers/pirate-adventure.svg"
+      "/covers/pirate-dice.png"
     ],
-    "playUrl": "/demos/pirate-adventure.html",
-    "instructions": "Press the action button to score. Reach ten points to win; restart to try again.",
+    "playUrl": "https://kingseagull28.github.io/pirate-dice/",
+    "instructions": "Enter your name and choose Play Captain Rook for solo play, or host an online game and share its code with a friend. Roll, then drag a 6 into the ship slot, a 5 into captain and a 4 into crew, in that order. The remaining two dice score treasure. You have up to three rolls per turn; the first player to win three rounds wins the voyage.",
     "featured": false,
     "approved": true
   },
